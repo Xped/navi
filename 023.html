@@ -170,20 +170,18 @@ document.write("You have visited this page for " + localStorage.pagecount + " ti
 					Comments
 				</h2>
 				<p>If you have any suggestions or complaints, please let us konw.</br>
-										<label for="exampleInputEmail1">
-						Email address
-					</label>
-					<input class="form-control" id="exampleInputEmail1" type="email" />
-				</div>
-				<div class="form-group">
-					 
-					<label for="exampleInputFile">
-						File input
-					</label>
-					<input class="form-control-file" id="exampleInputFile" type="file" />
-					<p class="help-block">
-						Plesae include all your words in this file.
-					</p>
+<form role="form">
+  <div class="form-group">
+    <label for="name">Content</label>
+    <input type="text" class="form-control" id="name" placeholder="Plz write here......">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox">Plz check it.
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">submit</button>
+</form>
 </div>
 </br>
 
