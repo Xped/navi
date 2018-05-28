@@ -22,23 +22,14 @@
 
   <body>
 
+  	<!--访问次数统计-->		
 <div class="container-fluid">
-
 	<div class="row">
-
 		<div class="col-md-12">
-
-
 			<div class="alert alert-success alert-dismissable">
-
-				 
-
-				<button class="close" aria-hidden="true" type="button" data-dismiss="alert">
-
+ 				<button class="close" aria-hidden="true" type="button" data-dismiss="alert">
 					×
-
 				</button>
-
 					<script type="text/javascript">
 
 					if (localStorage.pagecount)
@@ -50,7 +41,6 @@
 						localStorage.pagecount=1;
 						}
 					document.write("您已在当前设备上使用本服务" + localStorage.pagecount + "次.");
-
 					</script> 
 
 			</div>
@@ -79,7 +69,15 @@
 					<div class="collapse in" id="card-element-967649">
 
 						<div class="card-body">
-								运行时间:</br>
+								<dl class="dl-horizontal">
+								  <dt>运行时间</dt>
+								  <dd>武昌火车站综合体方向	6:20~21:45</br>南湖大道茶山刘方向		5:30~21:45</dd>
+								  <dt>票价信息</dt>
+								  <dd>投币2元,武汉通/移动支付1.6元</dd>
+								</dl>
+						</div>		  
+
+								
 								武昌火车站综合体方向	6:20~21:45</br>
 								南湖大道茶山刘方向		5:30~21:45</br></br>
 								票价信息:</br>
@@ -148,7 +146,6 @@
 						<div class="card-body">
 
 							给了3张图,说是有4条路,最后又来了一条校车参考路线.</br>So the question is how many routes do we have?</br>后期添加.
-
 						</div>
 
 					</div>
@@ -168,7 +165,7 @@
 	
 
 
-
+	<!--加载样式表-->		
     <script src="js/jquery.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
