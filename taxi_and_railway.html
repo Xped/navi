@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1", maximum-scale=1, user-scalable=no">
+    <title>出租汽车&城际铁路</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/shards.min.css?v=2.0.0">
+  <link rel="stylesheet" href="css/shards-demo.min.css?v=2.0.0">
+  </head>
+  
+  
+<body>
+  
+  <div class="loader">
+    <div class="page-loader"></div>
+  </div>
+
+
+			<form role="form">
+
+				<div class="panel-group" id="accordion">
+
+			</form>
+
+					<h4>
+
+			出租汽车
+
+		</h4>
+				<div class="card">
+					<div class="card-header">
+						 <a class="card-link" href="#route1" data-toggle="collapse" data-parent="#croute1">路线1</a>
+					</div>
+					<div class="collapse in" id="route1">
+						<div class="card-body">
+							经过珞狮路辅路，时间最短.</br>
+							<a class="btn" id="brouter1" role="button" href="#iroute1" data-toggle="modal">查看路线图</a>
+						</div>
+					</div>
+					</div>
+					
+				<div class="card">	
+					<div class="card-header">
+						 <a class="card-link" href="#route2" data-toggle="collapse" data-parent="#croute2">路线2</a>
+					</div>
+					<div class="collapse in" id="route2">
+						<div class="card-body">
+							经过民族大道和光谷，走大路，距离较近，但高峰期易堵车</br>
+							<a class="btn" id="brouter2" role="button" href="#iroute2" data-toggle="modal">查看路线图</a>
+						</div>
+					</div>
+					</div> 	
+
+					<div class="card">
+					<div class="card-header">
+						 <a class="card-link" href="#route3" data-toggle="collapse" data-parent="#croute1">路线3</a>
+					</div>
+					<div class="collapse in" id="route3">
+						<div class="card-body">
+							走书城路经过三环线</br>
+							<a class="btn" id="brouter3" role="button" href="#iroute3" data-toggle="modal">查看路线图</a>							
+						</div>
+					</div>
+					</div> 	
+
+					<div class="card">
+					<div class="card-header">
+						 <a class="card-link" href="#route4" data-toggle="collapse" data-parent="#croute1">路线4</a>
+					</div>
+					<div class="collapse in" id="route4">
+						<div class="card-body">
+							走三环线，虽距离略长但不经过光谷						
+						</div>
+
+				</div>
+</div> 	
+</br>
+
+		<h4>
+
+			城际铁路
+
+		</h4>
+
+				<div class="card">
+					<div class="card-header">
+						 <a class="card-link" href="#gpfs" data-toggle="collapse" data-parent="#cgpfs">购票方式</a>
+					</div>
+					<div class="collapse in" id="gpfs">
+						<div class="card-body">
+						<div class="card-body">				
+						<dl class="row">
+								  <dt class="col-sm-1">网上购票</dt>
+								  <dd class="col-sm-9">登陆电脑打开12306.cn或使用手机下载“铁路12306”进行购票，之后去车站自助售/取票机处或售票窗口取票即可。</dd>
+								  <dt class="col-sm-1">车站购票</dt>
+								  <dd class="col-sm-9">前往武昌火车站或南湖东站到自助售/取票机处或售票窗口，根据提示进行操作.</dd>				  
+								</dl>
+						</div>
+					</div>
+					</div>
+					<div class="card">
+					<div class="card-header">
+						 <a class="card-link" href="#zysx" data-toggle="collapse" data-parent="#czysx">注意事项</a>
+					</div>
+					<div class="collapse in" id="zysx">
+						<div class="card-body">
+							<p>
+								<span>最好提前半小时以上出发，网上购票的要注意预留取票时间；</span>
+							</p>
+							<p>
+								<span>乘车前，注意车次、检票时间以及上车地点等信息；</span>
+							</p>
+							<p>
+								<span>注意个人安全;记得带身份证</span>
+							</p>
+
+						</div>
+					</div>
+					</div>
+					
+									<div class="card">
+					<div class="card-header">
+						 <a class="card-link" href="#ddff" data-toggle="collapse" data-parent="#cddff">到达车站方法</a>
+					</div>
+					<div class="collapse in" id="ddff">
+						<div class="card-body">
+						<a class="btn" id="csyvip2" role="button" href="#svip2" data-toggle="modal">首义校区</a> | <a class="btn" id="cnhd" role="button" href="#snhd" data-toggle="modal">南湖校区</a>
+
+
+						</div>
+					</div>
+					</div>
+
+	
+			
+
+			</div> 	
+
+
+
+	<!--加载脚本-->	
+
+  <script src="js/jquery.min.js"</script>
+  <script src="js/popper.min.js"</script>
+  <script src="js/bootstrap.min.js"</script>
+  <script src="js/shards.min.js"></script>
+  <script src="js/demo.min.js"></script>
+	
+
+
+
+
+
+	<!--路线信息浮窗-->
+
+								<div class="modal fade" id="svip2" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+
+				<div class="modal-dialog" role="document">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<h5 class="modal-title" id="myModalLabel">
+
+								前往武昌火车站西广场城际铁路候车厅
+
+							</h5> 
+
+							<button class="close" type="button" data-dismiss="modal">
+
+								<span aria-hidden="true">×</span>
+
+							</button>
+
+						</div>
+
+						<div class="modal-body">
+
+						<p>
+							<span>从中南财经政法大学首义校区(南门)出发</span>
+						</p>
+						<p>
+							<span>向南步行23米,左转</span>
+						</p>
+						<p>
+							<span>沿张之洞路向东步行394米,直行</span>
+						</p>
+						<p>
+							<span>沿紫阳东路向东步行41米,右转</span>
+						</p>
+						<p>
+							<span>沿中山路辅路向南步行224米,左转</span>
+						</p>
+						<p>
+							<span>向东南步行144米,右转</span>
+						</p>
+						<p>
+							<span>向西南步行135米</span>
+						</p>
+						<p>
+							<span>到达武昌火车站西广场城际铁路候车室</span>
+						</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				</div>	
+				
+								<div class="modal fade" id="snhd" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+
+				<div class="modal-dialog" role="document">
+
+					<div class="modal-content">
+
+						<div class="modal-header">
+
+							<h5 class="modal-title" id="myModalLabel">
+
+								前往南湖东站
+
+							</h5> 
+
+							<button class="close" type="button" data-dismiss="modal">
+
+								<span aria-hidden="true">×</span>
+
+							</button>
+
+						</div>
+
+						<div class="modal-body">
+
+						<p>
+							<span>从中南财经政法大学南湖校区(南门)出发</span>
+						</p>
+						<p>
+							<span>向南步行542米,右转</span>
+						</p>
+						<p>
+							<span>沿水蓝路向西步行292米</span>
+						</p>
+						<p>
+							<span>到达南湖东站</span>
+						</p>
+						<img src="//wx2.sinaimg.cn/mw690/0060lm7Tly1fs0m558z1nj30fc0m44ht.jpg" width="40%" />
+						</div>
+
+					</div>
+
+				</div>
+
+				</div>	
+	<!--线路图浮窗-->			
+				
+				
+				<div class="modal fade" id="iroute1" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel">
+								路线1
+							</h5> 
+							<button class="close" type="button" data-dismiss="modal">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<img src="//wx2.sinaimg.cn/mw690/0060lm7Tly1frzd6k6de5j30b10dm42n.jpg" width="40%" />
+						</div>
+					</div>
+				</div>
+				</div>				
+				<div class="modal fade" id="iroute2" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel">
+								路线2
+							</h5> 
+							<button class="close" type="button" data-dismiss="modal">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<img src="//wx3.sinaimg.cn/mw690/0060lm7Tly1frzd75b8m5j30fn0ja0zp.jpg" width="40%" />
+						</div>
+					</div>
+				</div>
+				</div>							
+				<div class="modal fade" id="iroute3" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="myModalLabel">
+								路线3
+							</h5> 
+							<button class="close" type="button" data-dismiss="modal">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<img src="//wx3.sinaimg.cn/mw690/0060lm7Tly1frzd7tsf5cj30fn0jhah6.jpg" width="40%" />
+						</div>
+					</div>
+				</div>
+				</div>			
+
+		
+	
+
+  </body>
+
+
+
+</html>
