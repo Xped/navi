@@ -38,7 +38,21 @@
 
   <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
 
-    
+<script type="text/javascript">
+    function showImg(url) {
+        var frameid = 'frameimg' + Math.random();
+        console.debug(frameid);
+        console.debug(url);
+        window.img = '<img id="img" style="width:100%" src=\'' + url + '?' + Math.random() + '\' /><script>window.onload = function() { parent.document.getElementById(\'' + frameid + '\').height = document.getElementById(\'img\').height+\'px\'; }<' + '/script>';
+        document.write('<iframe id="' + frameid + '" src="javascript:parent.img;" frameBorder="0" scrolling="no" width="45%"></iframe>');
+    }
+</script>
+<div>
+    <!--这段脚本作用是在此处创建一个iframe-->
+    <script type="text/javascript">
+        showImg('your/url');
+    </script>
+</div>    
 
   <style>
 
